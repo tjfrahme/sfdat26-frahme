@@ -233,3 +233,66 @@ Web Scraping Resources:
 * For more on today's topics, these videos from Hastie and Tibshirani are useful: [overfitting and train/test split](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes). (Note that they use the terminology "validation set" instead of "test set".)
     * Alternatively, read section 5.1 (12 pages) of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), which covers the same content as the videos.
 * This video from Caltech's machine learning course presents an [excellent, simple example of the bias-variance tradeoff](http://work.caltech.edu/library/081.html) (15 minutes) that may help you to visualize bias and variance.
+
+
+### Class 6: Logistic Regression
+* Linear regression (Continued) [notebook](http://nbviewer.ipython.org/github/sinanuozdemir/sfdat26/blob/master/notebooks/05_linear_regression.ipynb)
+* Logistic regression [notebook](http://nbviewer.ipython.org/github/sinanuozdemir/sfdat26/blob/master/notebooks/06_logistic_regression.ipynb) and [slides](slides/06_logistic_regression.pdf) 
+	* Confusion matrix [slides](slides/06_confusion_matrix.pdf)
+* LAB -- Exercise with Titanic data [instructions](labs/06_titanic.md)
+
+**Homework:**
+
+* Homework due in **2 days!!!!**
+
+* If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
+
+**Resources:**
+
+* To go deeper into logistic regression, read the first three sections of Chapter 4 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), or watch the [first three videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) (30 minutes) from that chapter.
+* For a math-ier explanation of logistic regression, watch the first seven videos (71 minutes) from week 3 of Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/info), or read the [related lecture notes](http://www.holehouse.org/mlclass/06_Logistic_Regression.html) compiled by a student.
+* For more on interpreting logistic regression coefficients, read this excellent [guide](http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm) by UCLA's IDRE and these [lecture notes](http://www.unm.edu/~schrader/biostat/bio2/Spr06/lec11.pdf) from the University of New Mexico.
+* The scikit-learn documentation has a nice [explanation](http://scikit-learn.org/stable/modules/calibration.html) of what it means for a predicted probability to be calibrated.
+* [Supervised learning superstitions cheat sheet](http://ryancompton.net/assets/ml_cheat_sheet/supervised_learning.html) is a very nice comparison of four classifiers we cover in the course (logistic regression, decision trees, KNN, Naive Bayes) and one classifier we do not cover (Support Vector Machines).
+* This [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) may be useful to you as a reference.
+
+
+##Class 7: Natural Language Processing
+
+
+**pre-work**
+
+* Download all of the NLTK collections.
+   * In Python, use the following commands to bring up the download menu.
+   * ```import nltk```
+   * ```nltk.download()```
+   * Choose "all".
+   * Alternatively, just type ```nltk.download('all')```
+* Install three new packages: ```yahoo_finance```,  ```textblob``` and ```lda```.
+   * Open a terminal or command prompt.
+   * Type ```pip install yahoo_finance``` ```pip install textblob``` and ```pip install lda```.
+ 
+
+
+**Agenda**
+
+* Quick recap of what we've done so far
+* Naural Language Processing is the science of turning words and sentences into data and numbers. Today we will be exploring techniques into this field
+* [code](notebooks/07_nlp.ipynb) showing topics in NLP
+* [lab](labs/07_nlp_lab.ipynb) analyzing tweets about the stock market
+* NO CLASS ON MONDAY
+
+
+**Homework:**
+
+* Read Paul Graham's [A Plan for Spam](http://www.paulgraham.com/spam.html) and be prepared to **discuss it in class when we get back!**. Here are some questions to think about while you read:
+    * Should a spam filter optimize for sensitivity or specificity, in Paul's opinion?
+    * Before he tried the "statistical approach" to spam filtering, what was his approach?
+    * How exactly does his statistical filtering system work?
+    * What did Paul say were some of the benefits of the statistical approach?
+    * How good was his prediction of the "spam of the future"?
+* Below are the foundational topics upon which Wednesday's class will depend. Please review these materials before class:
+    * **Confusion matrix:** [a good guide](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) roughly mirrors the lecture from class 10.
+    * **Sensitivity and specificity:** Rahul Patwari has an [excellent video](https://www.youtube.com/watch?v=U4_3fditnWg&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (9 minutes).
+    * **Basics of probability:** These [introductory slides](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) (from the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php)) are quite good and include integrated quizzes. Pay specific attention to these terms: probability, sample space, mutually exclusive, independent.
+* You should definitely be working on your project! First draft is due Monday!!
