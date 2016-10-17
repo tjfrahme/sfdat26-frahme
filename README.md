@@ -31,7 +31,7 @@ No Class | 8/10: Introduction / Expectations / Intro to Data Science
 9/12: Advanced Sklearn (Pipeline and Feaure Unions) | 9/14: Review | |HW 2 Assigned (W)
 9/19: Decision Trees | 9/21: Ensembling Techniques | First Draft Due (W) | 
 9/26: Dimension Reduction | 9/28: Clustering / Topic Modelling | Peer Review Due (M)
-10/3: Neural Networks / Deep Learning | 10/5: Stochastic Gradient Descent | |HW 2 Due (W)
+10/3: Stochastic Gradient Descent | 10/5: Neural Networks / Deep Learning | |HW 2 Due (W)
 10/10: Recommendation Engines | 10/12: Web Development with Flask | |
 10/17: Data Science in Practice / Projects | 10/19: Projects | Git Er Done | Git Er Done
 
@@ -359,7 +359,7 @@ Today we are going to talk about four major things as related to advanced sklear
 * Decision trees are common in the medical field for differential diagnosis, such as this classification tree for [identifying psychosis](http://www.psychcongress.com/sites/naccme.com/files/images/pcn/saundras/psychosis_decision_tree.pdf).
 
 
-### Ensembling Techniques
+### CLass 12: Ensembling Techniques
 
 #### Agenda:
 * Ensembling ([notebook](notebooks/12_ensembling.ipynb))
@@ -376,3 +376,145 @@ Today we are going to talk about four major things as related to advanced sklear
 * [Large Scale Decision Forests: Lessons Learned](http://blog.siftscience.com/blog/2015/large-scale-decision-forests-lessons-learned) is an excellent post from Sift Science about their custom implementation of Random Forests.
 * [Unboxing the Random Forest Classifier](http://nerds.airbnb.com/unboxing-the-random-forest-classifier/) describes a way to interpret the inner workings of Random Forests beyond just feature importances.
 * [Understanding Random Forests: From Theory to Practice](http://arxiv.org/pdf/1407.7502v3.pdf) is an in-depth academic analysis of Random Forests, including details of its implementation in scikit-learn.
+
+
+### Class 13: Dimension Reduction
+
+#### Agenda
+
+* PCA
+	* [Explained visually](http://setosa.io/ev/principal-component-analysis/)
+    * [Slides](slides/13_dimension_reduction.pdf)
+    * Code: [PCA](notebooks/13_pca.ipynb)
+
+#### Resources
+* Facial Recognition using [PCA](http://scikit-learn.org/stable/tutorial/statistical_inference/putting_together.html)
+* Layman's intro to [PCA](https://www.youtube.com/watch?v=BfTMmoDFXyE)
+* Simple PCA using [iris](http://sebastianraschka.com/Articles/2015_pca_in_3_steps.html)
+* PCA step by step in [python](http://sebastianraschka.com/Articles/2014_pca_step_by_step.html)
+* [Sklearn](http://scikit-learn.org/stable/modules/decomposition.html) page on dimension reduction techniques including SVD
+
+
+### Class 14: Clustering / Topic Modelling
+* Clustering ([slides](slides/14_clustering.pdf), [notebook](notebooks/14_clustering.ipynb))
+    * K-means: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [visualization 1](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/), [visualization 2](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+    * DBSCAN: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html), [visualization](http://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
+    * LAB -- Pandora [notebook](labs/14_clustering_lab.ipynb)
+
+**Homework:**
+
+* **Homework 2 is due in one week!**
+
+#### Resources
+* [The Psychology Of Trump’s Twitter Followers](http://www.receptiviti.ai/blog/trumps-twitter-followers/)
+* Sklearn clustering example [here](http://scikit-learn.org/stable/auto_examples/text/document_clustering.html) and [here](http://scikit-learn.org/0.15/auto_examples/document_clustering.html)
+* LDA [explained](https://rstudio-pubs-static.s3.amazonaws.com/79360_850b2a69980c4488b1db95987a24867a.html)
+* LSA [tutorial](http://mccormickml.com/2016/03/25/lsa-for-text-classification-tutorial/)
+
+### Class 15: Stochastic Gradient Descent
+
+**Agenda**
+
+* Understand how vecotr calculus can help us minimize errors in our machine learning algorithms
+* See how batch and stochastic gradient descent are effective tools
+* notebook [here](notebooks/15_sgd.ipynb)
+
+**Resources**
+
+* Tutorial on gradient descent [here](http://machinelearningmastery.com/gradient-descent-for-machine-learning/)
+* Another one [here](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/)
+
+
+**Homework**
+
+* Homework 2 is due on Wednesday!!!!
+* Install [Tensorflow](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#anaconda-installation) and [skflow](https://github.com/tensorflow/skflow)
+* After you have installed tensorflow, read this [intro to tensorflow](https://www.tensorflow.org/versions/r0.11/tutorials/mnist/beginners/index.html)
+
+
+### Class 16: Deep Learning / Neural Networks
+
+**Agenda**
+
+* Understand what is meant by deep learning
+* See how Tensorflow utilizes deep learning in thei neural networks
+* Slides [here](slides/16_deep_nn.pdf)
+* notebook [here](notebooks/16_deep_learning.ipynb)
+
+
+**Resources**
+
+* Blog [post](https://medium.com/ilenze-com/object-detection-using-deep-learning-for-advanced-users-part-1-183bbbb08b19#.u53gezr8l) on Object Detection
+* Beginner [tutorial](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html) for tensorflow
+* Directory of training in [Tensorflow](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html)
+
+### Class 17: Recommendation Engines
+
+**Agenda**
+
+* See how companies like Pandora, Spotify, and Netflix make their recommendations
+* Slides [here](slides/17_recommendation_engines.pdf)
+* notebook [here](notebooks/17_recommenders.ipynb)
+
+
+**Resources**
+
+* Website on [The Netflix Prize](http://www.netflixprize.com/)
+* Another [intro to recommendation engines](https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/)
+* Using Kmeans to [make clusters for recommending](http://blogs.gartner.com/martin-kihn/how-to-build-a-recommender-system-in-python/)
+
+### Class 18: Web Development with Flask and Heroku
+
+**Objectives**
+
+* To launch your own machine learning powered website
+
+**Agenda**
+
+* Sign up for a spot next week! [signups](https://docs.google.com/spreadsheets/d/1lGEQ6p3s7o6P2n2QhGZaH0ujrIhabh6Z7-vwYILn32Q/edit#gid=0)
+* Present our speaker on Monday
+* Tips on presentation
+	* Start with [why](http://www.presentationzen.com/presentationzen/2010/05/the-importance-of-starting-from-why.html)
+
+* Understand Web Development and how we can deploy machine learning models to the web using Flask and Heroku
+* Slides [here](slides/18_web_development.pdf)
+
+**Homework**
+
+* Work on your project!!
+* Work on your project!!
+* Work on your project!!
+* Work on your project!!
+* please
+* Work on your project!!
+
+
+
+
+### Next Steps
+
+The hardest thing to do now is to stay sharp! I have a few recommendations on next steps in order to make sure that you don't forget what we learned here! ![](https://s-media-cache-ak0.pinimg.com/originals/88/74/9d/88749d9e7fb7ef330b5e0b4ceb781cfd.jpg)
+
+* Read [my book] (https://www.amazon.com/Principles-Data-Science-Sinan-Ozdemir-ebook/dp/B01A8T8YNC) ;)
+* Always stay up to date on [Kaggle](http://kaggle.com)
+	* Try working with some other people in this class!
+	* Our Slack channel will stay around if you still want to post cool blogs, videos, etc!
+* Try implementing some of the models we learned in class on your own!
+	* Great book [Data Science From Scratch] (http://file.allitebooks.com/20150707/Data%20Science%20from%20Scratch-%20First%20Principles%20with%20Python.pdf) with [code](https://github.com/joelgrus/data-science-from-scratch)
+
+	*  Text classification with Naive Bayes from Scratch [here] (https://web.stanford.edu/class/cs124/lec/naivebayes.pdf)
+	*  Introduction to Statistical Learning [book](http://www-bcf.usc.edu/~gareth/ISL/) Videos [here](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
+	*  PCA by hand [here](http://sebastianraschka.com/Articles/2014_pca_step_by_step.html)
+* Take a look at the **Resources** for each class to get a deeper understanding of what we've learned. Trust me there are a lot
+* Follow data scientists on Twitter.  This will help you stay up on the latest news/models/applications/tools.
+* Read blogs to keep learning.  I really like [District Data Labs](http://districtdatalabs.silvrback.com/) and [Data Elixer](http://dataelixir.com/).
+* There are some active Python Data meetups in the area:
+	* [SF Python](http://www.meetup.com/sfpython/)
+	* [SF Data Science](http://www.meetup.com/SF-Data-Science/)
+	* [SF Data Mining](http://www.meetup.com/Data-Mining/)
+	* Request sponsorship for study groups through [GA](https://gaalumni.typeform.com/to/dGyuWb)
+	* [General GA Alumni Perks](http://generalassemb.ly/alumni)
+
+	
+Thank you all for such a wonderful time and I truly hope to stay in touch.
+
